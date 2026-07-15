@@ -3,7 +3,13 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const db = mysql.createConnection(process.env.DATABASE_URL);
+const db = mysql.createConnection({
+  uri: process.env.DATABASE_URL,
+  ssl: {
+    minVersion: "TLSv1.2",
+    rejectUnauthorized: true,
+  },
+});
 
 db.connect((err) => {
   if (err) {
