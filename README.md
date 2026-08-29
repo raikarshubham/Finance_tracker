@@ -24,7 +24,7 @@ Finance Tracker is a premium, full-stack personal finance management application
 **Backend**
 - **Node.js** with **Express.js** (REST API)
 - **Prisma ORM** (Database Type-Safe Management)
-- **PostgreSQL** (Relational Database)
+- **MySQL** (Relational Database)
 - **JWT & bcrypt** (Security & Authentication)
 
 ## 🎨 Design System
